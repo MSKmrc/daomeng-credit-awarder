@@ -3,6 +3,19 @@
 用电脑控制安卓手机上的「到梦空间」APP，按 Excel 名单批量颁发活动学分。
 读名单 → 校验学号姓名 → 逐个搜索颁发 → 结果写回 SQLite 并导出 Excel，中断后可断点续跑。
 
+## 来源与致谢
+
+本项目基于最初的开源仓库：
+
+- [tangent2pi/daomeng](https://github.com/tangent2pi/daomeng)
+
+感谢最初作者 [@tangent2pi](https://github.com/tangent2pi) 和贡献者
+[@tangentn](https://github.com/tangentn) 的基础实现与开源工作。
+
+本仓库在此基础上增加了系统输入法搜索、姓氏批量发分、预先去重、
+待核查表、请求失败自动重试以及通用版/姓氏版构建入口。
+后续修改不代表原仓库作者维护，也不应覆盖或模糊原始项目的贡献归属。
+
 ## 双版本说明
 
 本仓库提供三个构建目标：
