@@ -1,0 +1,30 @@
+# 忽略所有文件
+*
+
+# 白名单：只追踪以下内容
+!.gitignore
+!DM.py
+!DM_surname.py
+!README.md
+!requirements.txt
+!build_exe.py
+!daomeng.spec
+!daomeng/
+!daomeng/**
+!tests/
+!tests/**
+!.github/
+!.github/**
+
+# 仍然忽略 daomeng 下的缓存与第三方二进制（platform-tools 由打包脚本注入）
+__pycache__/
+daomeng/__pycache__/
+tests/__pycache__/
+daomeng/platform-tools/
+daomeng/scrcpy-win64-v3.3.3/
+
+# 构建产物
+build/
+dist/
+
+robust_*
